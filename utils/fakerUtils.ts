@@ -1,8 +1,4 @@
 import { faker } from "@faker-js/faker";
-import path from "path";
-import fs from 'fs'
-
-
 
 export class FakerData {
     // getFirstName generates a random first name

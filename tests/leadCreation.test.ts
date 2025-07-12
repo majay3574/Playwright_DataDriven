@@ -10,7 +10,7 @@ import path from "path";
 const testData = readCSV(path.join(__dirname, '../data/leadData.csv'));
 
 testData.forEach((data, index) => {
-    test(`Lead Creation [${index + 1}] | ${data.Salutation || "NoSalutation"} (${data["Lead Source"] || "NoLeadSource"}, ${data.Industry || "NoIndustry"}, ${data.Rating || "NoRating"}) [Row ${index}]`, async ({ page, context }) => {
+    test(`Lead Creation | ${data.Salutation || "NoSalutation"} (${data["Lead Source"] || "NoLeadSource"}, ${data.Industry || "NoIndustry"}, ${data.Rating || "NoRating"}) [Row ${index}]`, async ({ page, context }) => {
 
         // Generate fresh Faker data inside the test block to ensure retry-safe consistency
         const firstName = FakerData.getFirstName();
@@ -26,8 +26,8 @@ testData.forEach((data, index) => {
 
         await salesforceHome.appLauncher();
         await salesforceHome.viewAll();
-        await salesforceHome.searchApp("Leads");
-        await salesforceHome.app("Leads");
+        await salesforceHome.searchApp(data.Prospects);
+        await salesforceHome.app(data.Prospects);
 
         await salesforceLead.newButton();
         await salesforceLead.salutation(data.Salutation);

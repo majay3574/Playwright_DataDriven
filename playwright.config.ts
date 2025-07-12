@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 import * as dotenv from 'dotenv';
-dotenv.config({ debug: true });
+dotenv.config({ debug: false });
 
 // Dynamic timestamped HTML report folder
 const timestamp = Date.now();
@@ -82,7 +82,6 @@ if (browser === 'mobile') {
   });
 }
 
-// Export config with the dynamically built project list
 export default defineConfig({
   testDir: './tests',
   timeout: process.env.TIMEOUT ? Number(process.env.TIMEOUT) : 55 * 10000,

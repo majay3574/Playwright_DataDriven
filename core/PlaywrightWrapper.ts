@@ -7,7 +7,6 @@ export class PlaywrightWrapper implements IPlaywrightContext {
     page: Page;
 
     constructor(playwrightCtx: IPlaywrightContext) {
-
         this.context = playwrightCtx.context;
         this.page = playwrightCtx.page;
     }
