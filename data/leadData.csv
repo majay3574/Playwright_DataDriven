@@ -1,2 +1,11 @@
 Salutation,Lead Source,Industry,Lead Status,Rating,Street,City,Postal Code,State,Country
 Mr.,Web,Agriculture,Open - Not Contacted,Hot,12 Greenfield Lane,Chennai,600001,Tamil Nadu,India
+Ms.,Phone Inquiry,Banking,Working - Contacted,Warm,45 Sunset Drive,Bengaluru,560002,Karnataka,India
+Dr.,Partner Referral,Apparel,Closed - Not Converted,Cold,87 Market Road,Hyderabad,500003,Telangana,India
+Prof.,Purchased List,Chemicals,Closed - Converted,Warm,23 Tech Street,Pune,411004,Maharashtra,India
+Mrs.,Web,Biotechnology,Open - Not Contacted,Hot,56 Lake View Ave,Jaipur,302005,Rajasthan,India
+Mx.,Other,Communications,Closed - Converted,Cold,101 River Side,Delhi,110006,Delhi,India
+Mr.,Phone Inquiry,Construction,Working - Contacted,Warm,77 Garden Road,Kochi,682007,Kerala,India
+Ms.,Partner Referral,Apparel,Closed - Not Converted,Hot,35 Orchid Park,Nagpur,440008,Maharashtra,India
+Dr.,Purchased List,Agriculture,Open - Not Contacted,Cold,19 Coral Lane,Ahmedabad,380009,Gujarat,India
+Prof.,Web,Banking,Closed - Converted,Warm,90 Maple Street,Coimbatore,641010,Tamil Nadu,India
