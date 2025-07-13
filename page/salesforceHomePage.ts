@@ -19,7 +19,7 @@ export class SalesforceHomePage extends PlaywrightWrapper {
      * Clicks on the "View All" button inside the App Launcher.
      */
     public async viewAll(): Promise<void> {
-        await this.waitSelector(selectors.viewAllBtn);
+        await this.waitSelector(selectors.viewAllBtn,"View All");
         await this.page.locator(selectors.viewAllBtn).highlight();
         await this.click(selectors.viewAllBtn, "View All", "Button");
     }
